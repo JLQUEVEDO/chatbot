@@ -4,7 +4,8 @@
 
 - Prototype a simple **React**-based messenger (chat) app that fetches and displays a user's conversation history with a given chatbot.
 - The messenger should allow the user to type and "send" a message.
-	> Note: No real messaging or chat-response functionality is required here. At minimum you just need an endpoint that will allow the user to post a message from the app, and then add any such "sent" messages to the conversation view.
+- When the user posts a message to the API, try to determine if the user's "utterance" was some form of greeting, and respond appropriately. If it was not a greeting, send a generic response.
+	> Note: No natural language processing (NLP) is required here. Simple logic is just fine for this challenge.
 - Build a **NodeJS**-based REST API service to handle these requests.
 	> Note: This does not need to be a hosted service. Running locally on your machine would be fine.
 
@@ -30,3 +31,4 @@
 ### Example conversation structure
 
 - Please refer to the included JSON file
+
