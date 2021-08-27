@@ -37,9 +37,16 @@
   }
 }
 
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .chatbotframe {
   border: 2px solid red;
-  width: 300px;
+  width: 400px;
   height: 600px;
   display: flex;
   flex-direction: column;

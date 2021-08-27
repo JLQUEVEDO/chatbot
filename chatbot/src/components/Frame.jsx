@@ -5,10 +5,12 @@ import { Title } from "./Title";
 
 export function Frame() {
   return (
-    <div className="chatbotframe">
-      <Title />
-      <ScrollWindow />
-      <InputContainer/>
+    <div className="main">
+      <div className="chatbotframe">
+        <Title />
+        <ScrollWindow />
+        <InputContainer />
+      </div>
     </div>
   );
 }
