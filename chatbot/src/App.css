@@ -58,6 +58,11 @@
   overflow: auto;
 }
 
+.chatbot-scroll > div {
+  display: flex;
+  flex-direction: column;
+}
+
 .chatbot-InputContainer {
   display: flex;
   padding: 8px;
@@ -66,3 +71,41 @@
 .chatbot-Input {
   flex: 1;
 }
+
+.chatbot-bubble {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.chatbot-bubble > div {
+  border: 2px solid yellow;
+}
+
+.bubble-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.bot-bubble {
+  justify-content: flex-start;
+}
+.bot-bubble > div {
+  align-items: flex-start;
+}
+.bot-bubble p {
+  text-align: left;
+}
+
+.user-bubble {
+justify-content: flex-end;
+}
+
+.user-bubble > div {
+ align-items: flex-end;
+}
+.user-bubble p {
+  text-align: right;
+}
+

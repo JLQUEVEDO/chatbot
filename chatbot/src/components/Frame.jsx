@@ -3,14 +3,16 @@ import { InputContainer } from "./InputContainer";
 import { ScrollWindow } from "./ScrollWindow";
 import { Title } from "./Title";
 
-export function Frame() {
+export function Frame({conversation}) {
+  
   return (
     <div className="main">
       <div className="chatbotframe">
         <Title />
-        <ScrollWindow />
+        <ScrollWindow  conversation={conversation}/>
         <InputContainer />
       </div>
     </div>
   );
 }
+

@@ -1,9 +1,15 @@
+import { Bubble } from "./Bubble";
 
 
-export function ScrollWindow(){
-    return(
+export function ScrollWindow({ conversation }) {
+
+    return (
         <div className="chatbot-scroll">
-            scroll Windows
+            <div>
+                {conversation.map(item => {
+                    return <Bubble key={item.id} message={item.message} time={item.messageTimestamp} type={item.messageEventType} />;
+                })}
+            </div>
         </div>
     )
 }
