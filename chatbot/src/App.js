@@ -8,7 +8,7 @@ import { getConversation } from './data/getConversation';
 function App() {
   const [conversation, setConversation] = useState([])
   useEffect(() => {
-    getConversation().then(c => setConversation(c)) //
+    getConversation().then(c => setConversation(c)) 
   }, []);
   
   return (
